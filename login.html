@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Acesso · Colegiado</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="login-layout">
+      <aside class="login-aside">
+        <div class="login-brand">
+          <span class="brand-symbol">C<span>.</span></span
+          ><span
+            ><strong>Colegiado</strong><small>Gestão acadêmica</small></span
+          >
+        </div>
+        <div class="login-hero">
+          <div class="hero-micro">ORGANIZAÇÃO · TRANSPARÊNCIA · EFICIÊNCIA</div>
+          <h1>Reuniões bem organizadas. <em>Decisões bem registradas.</em></h1>
+          <p>
+            Um espaço centralizado para coordenar reuniões, organizar pautas,
+            acompanhar participações e consolidar atas do colegiado.
+          </p>
+          <div class="hero-feature">
+            <span class="round-check">✓</span> Plataforma administrativa para a
+            coordenação de curso
+          </div>
+        </div>
+        <div class="aside-bottom">
+          Projeto acadêmico · Sistema de Gestão de Colegiado
+        </div>
+      </aside>
+      <main class="login-main">
+        <div class="login-card">
+          <div class="login-overline">ACESSO RESTRITO</div>
+          <h2>Boas-vindas!</h2>
+          <p>
+            Entre com suas credenciais para acessar o painel da coordenação.
+          </p>
+          <form id="form-login">
+            <div class="mode-choices" role="group" aria-label="Ambiente">
+              <label class="mode-option"
+                ><input type="radio" name="mode" value="demo" checked /><span
+                  >Demonstração</span
+                >
+              </label>
+              <label class="mode-option">
+                <input type="radio" name="mode" value="api" />
+                <span>API local (Spring)</span>
+              </label>
+            </div>
+            <div class="form-grid">
+              <div class="field field--full">
+                <label for="email">E-mail institucional <span>*</span> </label>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  autocomplete="username"
+                  placeholder="nome@ifpa.edu.br"
+                  required
+                  value=""
+                />
+                <!--No campo "value" acima é para o email fictício: coordenacao@ifpa.edu.br -->
+              </div>
+              <div class="field field--full">
+                <label for="senha">Senha <span>*</span></label>
+                <input
+                  id="senha"
+                  name="senha"
+                  type="password"
+                  autocomplete="current-password"
+                  placeholder="Sua senha de acesso"
+                  required
+                  value=""
+                />
+                <!--No campo "value" acima é para a senha fictícia: demo123 -->
+              </div>
+            </div>
+            <div id="login-error" role="alert" class="form-alert"></div>
+            <div style="margin-top: 23px">
+              <button
+                type="submit"
+                id="btn-login"
+                class="btn btn--primary btn--wide"
+                style="height: 46px"
+              >
+                Entrar no painel
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M5 12h14m-6-6 6 6-6 6" />
+                </svg>
+              </button>
+            </div>
+          </form>
+          <div id="demo-tip" class="demo-credentials">
+            Para explorar a interface sem o back-end, use
+            <code>coordenacao@ifpa.edu.br</code> e a senha <code>demo123</code>.
+            Os dados da demonstração são fictícios e ficam apenas no seu
+            navegador.
+          </div>
+          <div class="login-foot">
+            Projeto Integrador · HTML, CSS e JavaScript puro
+          </div>
+        </div>
+      </main>
+    </div>
+    <script type="module" src="js/login.js"></script>
+  </body>
+</html>
