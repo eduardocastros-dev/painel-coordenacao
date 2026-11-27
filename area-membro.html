@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área do Membro - Sistema de Colegiado</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Área do Membro</h1>
+            <div>
+                <a href="validar.html" class="nav-link" style="margin-right: 15px;">Portal de Validação</a>
+                <button id="btn-sair" onclick="logout()" style="background:#e2e8f0; color:#334155;">Sair</button>
+            </div>
+        </header>
+
+        <!-- Seção 1 e 2: Visualização e Assinatura da Ata -->
+        <section class="secao">
+            <h2>Ata da Reunião</h2>
+            <p>Leia atentamente o texto da ata gerada pela coordenação antes de registrar sua assinatura eletrônica.</p>
+
+            <!-- Container obrigatório conforme especificação -->
+            <div id="conteudo-ata" class="ata-box">Carregando texto da ata...</div>
+
+            <!-- Botão obrigatório conforme especificação -->
+            <button id="btn-assinar" class="btn-success">Assinar Ata</button>
+
+            <!-- Feedback visual da assinatura -->
+            <div id="status-assinatura" class="alerta"></div>
+        </section>
+
+        <hr style="border: 0; border-top: 1px solid #e2e8f0; margin: 25px 0;">
+
+        <!-- Seção Extra do Escopo: Download / Emissão de Declaração -->
+        <section class="secao">
+            <h2>Declaração de Participação</h2>
+            <p>Gere ou baixe sua declaração semestral com código UUID para validação pública.</p>
+            <div class="form-group">
+                <button id="btn-baixar-declaracao" class="btn-primary">Gerar / Baixar Declaração</button>
+            </div>
+            <div id="box-declaracao" class="alerta"></div>
+        </section>
+    </div>
+
+    <script src="area-membro.js"></script>
+</body>
+</html>

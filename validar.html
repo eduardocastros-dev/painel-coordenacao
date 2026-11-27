@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Público de Validação - Sistema de Colegiado</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Validação de Autenticidade</h1>
+            <a href="login.html" class="nav-link">Acesso Restrito</a>
+        </header>
+
+        <p>Insira o código UUID presente na declaração ou documento emitido pelo sistema para verificar sua autenticidade.</p>
+
+        <div class="form-group">
+            <input type="text" id="codigo-uuid" placeholder="Ex: 550e8400-e29b-41d4-a716-446655440000">
+            <button id="btn-verificar" class="btn-primary">Verificar</button>
+        </div>
+
+        <!-- Área onde será exibido o bloco verde (200 OK) ou vermelho (404) -->
+        <div id="resultado-validacao" class="alerta"></div>
+    </div>
+
+    <script src="validar.js"></script>
+</body>
+</html>
